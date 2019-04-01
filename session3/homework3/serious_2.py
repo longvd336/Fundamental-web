@@ -19,10 +19,12 @@ sheepSize[index] = define_size
 print(sheepSize)
 print()
 
-month = input()
+month = 4
+
+
 while loop:
     
-    if( count < int(month)):
+    if( count < month):
         
         print ("MONTH", count )
         
