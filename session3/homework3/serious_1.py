@@ -27,7 +27,7 @@ while loop:
         print("Update position? ")
         a = int(input())
         if a> len(items):
-            print("out off range")
+            print("index out off range")
             
         else:
             print("new item ?")
@@ -40,7 +40,7 @@ while loop:
         print("Delete position? ")
         xoa = int(input())
         if xoa > len(items):
-            print("out of range")
+            print("index out of range")
                    
         else :
             del items[xoa-1]
