@@ -6,6 +6,7 @@ game = ["invoker","jakiro", "techies"]
 # correct = word
 # random_word = random.sample(word, len(word))
 # jumble = " ".join(random_word)
+print("Welcome to jumble game")
 loop = True
 while True:
     
@@ -13,7 +14,7 @@ while True:
     correct = word
     random_word = random.sample(word, len(word))
     jumble = " ".join(random_word)
-    print("Welcome to jumble game")
+    
     
     print(jumble)
     guess = input("Your answer : ")
