@@ -26,11 +26,6 @@ shapes = [
 def get_shapes():
     return shapes
 
-# elements = choice(shapes)
-# # color = elements["text"].upper()
-# more_color = [ '#3F51B5','#C62828','#FFD600','#4CAF50']
-# # code = choice(more_color)
-# elements = choice(shapes)
 def generate_quiz():
     elements = choice(shapes)
     color = elements["text"].upper()
@@ -55,7 +50,6 @@ def mouse_press(x, y, color , code , quiz_type):
             
                 else:
                     return False
-
     if(quiz_type == 1):
         for item in shapes:
             c = item["color"]
