@@ -14,5 +14,6 @@ for char in x:
             letter_counts[char] = 1
 
 keys = letter_counts.keys()
+
 for char in sorted(keys):
     print(char, letter_counts[char])
