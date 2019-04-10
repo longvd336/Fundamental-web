@@ -1,15 +1,15 @@
 from random import *
-
+from calculate import tinhToan
 def generate_quiz():
     # Hint: Return [x, y, op, result]
     import random
-    import calculate
+    # import calculate
     x = randint(1,10)
     y = randint(1,10)
 
     op = choice(["+", "-", "*", "//"])
     
-    result = calculate.tinhToan( x , y, op )
+    result = tinhToan( x , y, op )
 
     fake = randint(result-1 , result + 1 )
     
@@ -17,8 +17,8 @@ def generate_quiz():
 
 def check_answer(x, y, op, fake , answer):
     
-    import calculate
-    result = calculate.tinhToan( x , y, op )
+    # import calculate
+    result = tinhToan( x , y, op )
     if fake == result:
         if(answer == True):
             return True

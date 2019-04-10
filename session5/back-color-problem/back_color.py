@@ -39,30 +39,37 @@ def generate_quiz():
             ]
 
 def mouse_press(x, y, color , code , quiz_type):
+    from Se_5 import is_inside
+    l = [x,y]
     if(quiz_type == 0):
         for item in shapes:
             text = item["text"].upper()
             i = item["rect"]
+            
             if color == text :
+                
+                return is_inside( l , i )
+                # if(i[0] < x <i[0]+i[2] and i[1]< y < i[1]+i[3]):
+                #     return True
             
-                if(i[0] < x <i[0]+i[2] and i[1]< y < i[1]+i[3]):
-                    return True
-            
-                else:
-                    return False
+                # else:
+                #     return False
     if(quiz_type == 1):
         for item in shapes:
+            
             c = item["color"]
             i = item["rect"]
-            if c == code:
-                if(i[0] < x <i[0]+i[2] and i[1]< y < i[1]+i[3]):
-                    return True
             
-                else:
-                    return False
+            if c == code:
+                
+                return is_inside( l , i)
+            #     if(i[0] < x <i[0]+i[2] and i[1]< y < i[1]+i[3]):
+            #         return True
+            
+            #     else:
+            #         return False
                  
 
-    # return True
 
         
         
