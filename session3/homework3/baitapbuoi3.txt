@@ -1,8 +1,0 @@
-﻿* A nested list is a list that appears as an element in a another list\
-
-
-ex: something = [“long”, 2,3,4,5, “game”,”[football”, “swimming”]]
-
-
-        [“football”,”swimming ”] is a nested list.
-* A list can store both strings and intergers.
